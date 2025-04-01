@@ -1,4 +1,4 @@
-# KC, a Kemono and Coomer crossplatform desktop notifications
+# KC, Kemono and Coomer crossplatform desktop notifications
 
 ## Current features:
 - Persistent memory
