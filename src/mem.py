@@ -50,7 +50,7 @@ def get_clist(api: API) -> list:
     clist = sorted(
         api.get_creators_list(), key=lambda creator: creator["favorited"], reverse=True
     )
-    write_file("clist", clist)
+    # write_file("clist", clist)
     return clist
 
 

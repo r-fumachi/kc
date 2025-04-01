@@ -3,7 +3,6 @@ from mem import *
 import threading, webview, json, queue, time
 from notifypy import Notify
 
-
 DEFAULT_TIMER: int = 1800  # 30 minutes
 
 
@@ -43,7 +42,7 @@ def update_handler(
             notification.icon = "./src/ui/kemono.png"
             notification.application_name = "KC"
             notification.send()
-            write_file(event.string(), creator_fetch[:10])
+            write_file(event.string(), [creator_fetch[0]])
         try:
             kill_switch.get(timeout=timeout)
             break
