@@ -10,6 +10,8 @@ Contains:
 import json, os
 from api import API
 
+# SWITCH TO SQLITE3 .DEV
+
 
 def get_file(name: str) -> list:
     """Loads file at data/name into memory.

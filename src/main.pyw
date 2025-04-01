@@ -144,7 +144,7 @@ def obliteration_handler(root: queue.SimpleQueue) -> None:
     return logic
 
 
-def main(window: webview.window, api: API) -> None:
+def root_handler(window: webview.window, api: API) -> None:
     # Timer
     timer = DEFAULT_TIMER
 
@@ -271,4 +271,4 @@ if __name__ == "__main__":
         resizable=False,
         width=400,
     )
-    webview.start(main, args=[window, api], gui="qt", icon="ui/kemono.png")
+    webview.start(root_handler, args=[window, api], gui="qt", icon="ui/kemono.png")
