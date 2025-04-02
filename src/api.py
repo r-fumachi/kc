@@ -7,11 +7,13 @@ Contains:
 """
 
 import requests
-
+from os import getcwd, path
 
 url = [coomer := "https://coomer.su/api/v1/", kemono := "https://kemono.su/api/v1"]
 
 icons = [cicon := "https://img.coomer.su/icons", kicon := "https://img.kemono.su/icons"]
+
+notif_icon_path = path.join(getcwd(),path.join('ui','kemono.png'))
 
 services = [
     patreon := "patreon",

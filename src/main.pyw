@@ -39,7 +39,7 @@ def update_handler(
         if creator_file[0] != creator_fetch[0]:
             notification.message = creator_fetch[0]["title"]
             notification.title = f"New post from {event.name} ({event.service})"
-            notification.icon = "./src/ui/kemono.png"
+            notification.icon = notif_icon_path
             notification.application_name = "KC"
             notification.send()
             write_file(event.string(), [creator_fetch[0]])
